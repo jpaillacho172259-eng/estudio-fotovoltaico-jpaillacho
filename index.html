@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Weather Dashboard</h1>
+
+    <form id="search-form" class="search">
+      <input id="city-input" type="search" placeholder="Enter city or place (e.g. Madrid)" required />
+      <button type="submit">Search</button>
+    </form>
+
+    <section id="result" class="hidden">
+      <div id="location" class="location"></div>
+      <div id="current" class="card current"></div>
+      <div id="daily" class="cards"></div>
+    </section>
+
+    <div id="loading" class="hidden">Loading…</div>
+    <div id="error" class="error hidden"></div>
+
+    <footer>
+      <p>Data provided by <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a> and <a href="https://nominatim.openstreetmap.org/" target="_blank" rel="noopener">Nominatim</a>.</p>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
